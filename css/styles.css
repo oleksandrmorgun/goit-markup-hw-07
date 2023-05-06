@@ -71,25 +71,17 @@ button {
 .container {
   /* width: 1158px; */
 
-  width: 396px;
+  max-width: 428px;
   padding: 0 15px;
   margin: 0 auto;
   outline: 1px solid red;
-}
-
-/* PHONE */
-
-@media screen and (min-width: 428px) {
-  .container {
-    width: 396px;
-  }
 }
 
 /* TABLET */
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 736px;
+    max-width: 768px;
   }
 }
 
@@ -97,9 +89,10 @@ button {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
   }
 }
+
 /* ========== HEADER ========== */
 
 .header {
@@ -273,19 +266,25 @@ button {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
-  padding: 188px 0;
+  /* padding: 188px 0; */
   margin: auto;
+
+  padding: 112px 0;
 }
 
 .hero-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  /* font-size: 56px;
+  line-height: 1.07; */
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
   max-width: 496px;
-  margin: 0 auto 48px;
+  /* margin: 0 auto 48px; */
+
+  font-size: 36px;
+  line-height: 1.11;
+  margin: 0 auto 72px;
 }
 
 .main-btn {
