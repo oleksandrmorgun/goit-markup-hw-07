@@ -68,6 +68,22 @@ button {
   cursor: pointer;
 }
 
+.container {
+  /* width: 1158px; */
+
+  width: 396px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+/* PHONE */
+@media screen and (min-width: 428px) {
+  .container {
+    width: 396px;
+  }
+}
+
 /* ========== HEADER ========== */
 
 .header {
@@ -79,12 +95,7 @@ button {
 .container-header {
   display: flex;
   align-items: center;
-}
-
-.container {
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .logo {
@@ -96,6 +107,8 @@ button {
   text-transform: uppercase;
   color: var(--accent-background-color);
   margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo-part {
@@ -103,9 +116,11 @@ button {
 }
 
 .header-nav {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  margin-right: auto;
+  margin-right: auto; */
+
+  display: none;
 }
 
 .header-nav-list {
@@ -153,8 +168,10 @@ button {
 }
 
 .header-contact-list {
-  display: flex;
-  gap: 40px;
+  /* display: flex;
+  gap: 40px; */
+
+  display: none;
 }
 
 .header-contact-link {
@@ -170,6 +187,17 @@ button {
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--accent-color);
+}
+
+.mobile-menu-open-btn { 
+  display: flex;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.mobile-menu-open-icon {
+  stroke: var(--secondary-text-color);
 }
 
 /* ========== MAIN ========== */
