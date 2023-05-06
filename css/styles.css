@@ -355,9 +355,9 @@ button {
   flex-direction: column;
 }
 
-.our-actions-item {
-  /* width: calc((100% - 72px) / 4); */
-}
+/* .our-actions-item {
+  width: calc((100% - 72px) / 4);
+} */
 
 .our-actions-container {
   /* display: flex; */
@@ -446,6 +446,7 @@ button {
 
 .we-doing {
   padding-bottom: 120px;
+  display: none;
 }
 
 .we-doing-title {
@@ -467,6 +468,11 @@ button {
   width: calc((100% - 48px) / 3);
 }
 
+@media screen and (min-width: 1158px) {
+  .we-doing {
+    display: block;
+  }
+}
 /* ========== SECTION FOUR ========== */
 
 .our-team {
