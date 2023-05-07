@@ -115,7 +115,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-background-color);
-  margin-right: 76px;
+  /* margin-right: 76px; */
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -633,9 +633,9 @@ button {
   gap: 72px 16px;
 }
 
-.customers-item {
-  /* width: calc((100% - 120px) / 6); */
-}
+/* .customers-item {
+  width: calc((100% - 120px) / 6);
+} */
 
 .customers-link {
   display: flex;
@@ -683,12 +683,16 @@ button {
 
 .footer {
   background-color: var(--secondary-accent-background-color);
-  padding: 100px 0;
+  /* padding: 100px 0; */
+
+  padding: 96px 0;
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  /* display: flex;
+  align-items: baseline;  */
+
+  text-align: center;
 }
 
 .logo-footer {
@@ -707,11 +711,15 @@ button {
   letter-spacing: 0.02em;
   color: var(--cloud-color);
   max-width: 264px;
+
+  margin: 0 auto;
+  text-align: justify;
+  margin-bottom: 72px;
 }
 
-.footer-social-media {
+/* .footer-social-media {
   margin-left: 120px;
-}
+} */
 
 .footer-description-media {
   font-weight: 500;
@@ -724,7 +732,9 @@ button {
 
 .footer-social-media-list {
   display: flex;
+  justify-content: center;
   gap: 16px;
+  padding-bottom: 72px;
 }
 
 .footer-social-media-item {
@@ -756,6 +766,13 @@ button {
   margin-left: auto;
 }
 
+.footer-subscribe-form {
+  /* display: flex; */
+  gap: 24px;
+
+  display: block;
+}
+
 .footer-subscribe-text {
   font-weight: 500;
   line-height: 1.5;
@@ -765,7 +782,7 @@ button {
 }
 
 .footer-subscribe-input {
-  width: 264px;
+  /* width: 264px; */
   height: 40px;
   border: 1px solid var(--white-color);
   border-radius: 4px;
@@ -773,6 +790,9 @@ button {
   color: var(--white-color);
   cursor: pointer;
   padding: 8px 16px;
+
+  width: 100%;
+  margin-bottom: 16px;
 }
 
 .footer-subscribe-input::placeholder {
@@ -803,6 +823,8 @@ button {
   color: var(--white-color);
   background-color: var(--accent-background-color);
   transition: background-color var(--transition-duration-and-func);
+
+  margin: 0 auto;
 }
 
 .footer-subscribe-btn:hover,
@@ -810,10 +832,6 @@ button {
   background-color: var(--accent-color);
 }
 
-.footer-subscribe-form {
-  display: flex;
-  gap: 24px;
-}
 /* ========== PORTFOLIO ========== */
 
 .portfolio {
