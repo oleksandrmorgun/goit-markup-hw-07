@@ -879,6 +879,40 @@ button {
   }
 }
 
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .footer-description {
+    margin-right: 120px;
+    margin-left: 0;
+  }
+
+  .footer-social-media-list {
+    margin-right: 80px;
+  }
+
+  .footer-subscribe {
+    margin-left: 0;
+  }
+  
+  .footer-subscribe-form {
+    display: flex;
+  }
+}
+
 /* ========== PORTFOLIO ========== */
 
 .portfolio {
