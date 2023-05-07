@@ -649,7 +649,7 @@ button {
   transition: color var(--transition-duration-and-func),
     border var(--transition-duration-and-func);
 
-    width: 190px;
+  width: 190px;
 }
 
 .customers-icon {
@@ -832,6 +832,53 @@ button {
   background-color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 74px 24px;
+  }
+
+  .logo {
+    display: flex;
+    margin-left: 93px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .footer-description {
+    width: 264px;
+    margin-left: 93px;
+    margin-bottom: 0;
+  }
+
+  .footer-description-media {
+    display: flex;
+  }
+
+  .footer-social-media-list {
+    padding-bottom: 0;
+  }
+
+  .footer-subscribe-form {
+    display: flex;
+  }
+
+  .footer-subscribe {
+    margin-left: 93px;
+  }
+
+  .footer-subscribe-text {
+    display: flex;
+  }
+
+  .footer-subscribe-input {
+    width: 264px;
+    margin-bottom: 0;
+  }
+}
+
 /* ========== PORTFOLIO ========== */
 
 .portfolio {
@@ -841,8 +888,8 @@ button {
 
 .portfolio-btn-list {
   display: flex;
-  gap: 24px;
   justify-content: center;
+  gap: 24px;
   margin-bottom: 72px;
 }
 
