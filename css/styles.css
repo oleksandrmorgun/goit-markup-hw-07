@@ -605,8 +605,11 @@ button {
 /* ========== SECTION FIVE ==========*/
 
 .customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .customers-title {
@@ -622,25 +625,31 @@ button {
 .customers-list {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 24px;
+  /* align-items: center; */
+  /* gap: 24px; */
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 72px 16px;
 }
 
 .customers-item {
-  width: calc((100% - 120px) / 6);
+  /* width: calc((100% - 120px) / 6); */
 }
 
 .customers-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
+  /* width: 168px; */
   height: 88px;
   border-radius: 4px;
   color: var(--light-slate-color);
   border: 1px solid var(--light-slate-color);
   transition: color var(--transition-duration-and-func),
     border var(--transition-duration-and-func);
+
+    width: 190px;
 }
 
 .customers-icon {
@@ -651,6 +660,23 @@ button {
 .customers-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .customers-link {
+    width: 168px;
+  }
+
+  .customers-list {
+    gap: 72px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 /* ========== FOOTER ========== */
