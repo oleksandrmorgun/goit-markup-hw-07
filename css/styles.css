@@ -698,6 +698,7 @@ button {
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
+  padding-top: 0;
 }
 
 .logo-part-footer {
@@ -907,7 +908,7 @@ button {
   .footer-subscribe {
     margin-left: 0;
   }
-  
+
   .footer-subscribe-form {
     display: flex;
   }
@@ -1242,4 +1243,105 @@ button {
   background-color: var(--accent-color);
   color: var(--white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* MOBILE MENU */
+
+.mobile-menu-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--white-color);
+}
+
+.mobile-menu-close-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 80px;
+  margin-bottom: 284px;
+  margin-left: 40px;
+}
+
+.mobile-nav-link {
+  font-family: inherit;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--secondary-accent-background-color);
+}
+
+.mobile-nav-link.current {
+  color: var(--accent-color);
+}
+
+.mobile-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 48px;
+  
+}
+
+.mobile-phone-link {
+  font-family: inherit;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-left: 40px;
+    color: var(--accent-background-color);
+}
+
+.mobile-email-link {
+font-family: inherit;
+font-size: 20px;
+font-weight: 500;
+margin-left: 40px;
+color: var(--main-text-color);
+}
+
+.mobile-social-media-list {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  padding-bottom: 40px;
+}
+
+.mobile-social-media-item {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-social-media-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-background-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-duration-and-func);
+}
+
+.mobile-social-media-icon {
+  fill: var(--cloud-color);
 }
