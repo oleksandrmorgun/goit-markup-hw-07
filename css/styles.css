@@ -74,7 +74,7 @@ button {
   max-width: 428px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* TABLET */
@@ -912,7 +912,7 @@ button {
     display: flex;
     padding-top: 0;
     padding-bottom: 0;
-    margin-right: 0;
+    margin-right: 120px;
   }
 
   .logo-footer {
@@ -969,12 +969,17 @@ button {
 
   .logo {
     margin-left: 0;
+    margin-right: 120px;
   }
 
   .footer-description {
     margin-right: 120px;
     margin-left: 0;
   }
+
+.footer-social-media {
+  margin-bottom: 0;
+}
 
   .footer-social-media-list {
     margin-right: 80px;
@@ -1149,6 +1154,7 @@ button {
   border-radius: 50%;
   background-color: var(--border-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color var(--transition-duration-and-func);
 }
 
 .modal-close-btn:hover,
@@ -1343,10 +1349,11 @@ button {
 /* ========== MOBILE MENU ========== */
 
 .mobile-menu-container {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   width: 100%;
   height: 100%;
-  max-height: 796px;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -1402,6 +1409,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-top: auto;
   margin-bottom: 48px;
 }
 
