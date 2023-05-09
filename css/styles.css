@@ -904,9 +904,9 @@ button {
     flex-wrap: wrap;
   }
 
-    .footer-logo-description {
-      margin-right: 24px;
-    }
+  .footer-logo-description {
+    margin-right: 24px;
+  }
 
   .logo {
     display: flex;
@@ -915,9 +915,9 @@ button {
     margin-right: 0;
   }
 
-.logo-footer {
-  margin-left: 93px;
-}
+  .logo-footer {
+    margin-left: 93px;
+  }
 
   .footer-description {
     width: 264px;
